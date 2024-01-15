@@ -1,0 +1,36 @@
+$TTL 3H
+@  IN SOA ns.nobreak.co.kr. root.nobreak.co.kr. (
+        2023102501      ; serial
+        1D              ; refresh
+        1H              ; retry
+        1W              ; expire
+        3H )            ; minimum
+
+@       IN NS     ns.nobreeak.co.kr.
+        IN MX 10  mail.nobreak.co.kr.
+        IN A    192.168.111.100
+ns      IN A    192.168.111.100
+mail    IN A    192.168.111.100
+www     IN A    192.168.111.100
+ftp     IN CNAME www
+web     IN CNAME www
+
+
+
+$TTL 3H
+@  IN SOA ns.nobreak.co.kr. root.nobreak.co.kr. (
+        2023102501      ; serial
+        1D              ; refresh
+        1H              ; retry
+        1W              ; expire
+        3H )            ; minimum
+
+@      IN NS      ns.nobreak.co.kr.
+         IN PTR     nobreak.co.kr.
+100    IN PTR     ns.nobreak.co.kr.
+100    IN PTR     mail.nobreak.co.kr.
+100    IN PTR     www.nobreak.co.kr.
+200    IN PTR     ftp.nobreak.co.kr.
+
+
+soldesk.com -> 존파일명 soldesk.com.zone
